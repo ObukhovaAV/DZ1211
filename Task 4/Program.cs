@@ -5,13 +5,13 @@
 
 void SumNumber(int first, int second, int n)
 {
-  int t = 0;
+  int sum = 0;
   if (n > 0)
     {
       Console.Write(first + second + " ");
-      t = first;
+      sum = first+second;
       first = second;
-      second = second + t;
+      second = sum;
       SumNumber(first, second, n - 1);
     }
 }
